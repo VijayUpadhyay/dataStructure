@@ -1,6 +1,7 @@
 package com.vijay.array.stacks;
 
 public class TwoStacksUsingOneArray {
+	static int top1, top2;
 	public static void main(String args[]) {
 		TwoStacksUsingOneArray ts = new TwoStacksUsingOneArray(5);
 		ts.push1(5);
@@ -13,7 +14,6 @@ public class TwoStacksUsingOneArray {
 		System.out.println("Popped element from" + " stack2 is " + ts.pop2());
 	}
 	int size;
-	int top1, top2;
 	int arr[];
 	TwoStacksUsingOneArray(int n) {
 		arr = new int[n];
