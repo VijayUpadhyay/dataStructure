@@ -5,9 +5,8 @@ class MergeSortedArray {
 		int arr2[] = {2, 3, 8, 13};
 		int m = arr1.length;
 		int n = arr2.length;
-		// merge(arr1, arr2, m, n);
 		mergeArray(arr1, arr2);
-		System.out.print("After Merging \nFirst Array: ");
+		System.out.print("\nAfter Merging \nFirst Array: ");
 		for (int i = 0; i < m; i++)
 			System.out.print(arr1[i] + " ");
 		System.out.print("\nSecond Array: ");
