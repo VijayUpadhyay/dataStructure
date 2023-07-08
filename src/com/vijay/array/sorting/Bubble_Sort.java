@@ -21,7 +21,6 @@ public class Bubble_Sort {
                     arr[i] = temp;
                 }
             }
-
         }
     }
 }
