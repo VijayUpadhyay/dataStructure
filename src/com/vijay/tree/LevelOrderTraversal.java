@@ -15,7 +15,6 @@ class Node {
 }
 
 class LevelOrderTraversal {
-
     // Root of the Binary Tree
     Node root;
 
@@ -44,21 +43,19 @@ class LevelOrderTraversal {
             printCurrentLevel(root, i);
     }
 
-    // the number of nodes along the longest path from the root node
-    // down to the farthest leaf node.
-    int height(Node root) {
-        if (root == null)
+    // the number of nodes along the longest path from the root node down to the farthest leaf node.
+    int height(Node node) {
+        if (node == null)
             return 0;
-        else {
-            // Compute height of each subtree
-            int lHeight = height(root.left);
-            int rHeight = height(root.right);
-            // use the larger one
-            if (lHeight > rHeight)
-                return (lHeight + 1);
-            else
-                return (rHeight + 1);
-        }
+        // Compute height of each subtree
+        int lHeight = height(node.left);
+        int rHeight = height(node.right);
+        // use the larger one
+        if (lHeight > rHeight)
+            return (lHeight + 1);
+        else
+            return (rHeight + 1);
+
     }
 
     // Print nodes at the current level
