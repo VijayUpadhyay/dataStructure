@@ -1,4 +1,4 @@
-package com.vijay.array.sorting;
+package com.vijay.sorting;
 // Java program for Quick Sort on Singly Linked List
 
 /*Sort a linked list using quick sort*/
