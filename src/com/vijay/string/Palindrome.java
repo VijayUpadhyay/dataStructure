@@ -5,7 +5,7 @@ public class Palindrome {
     public static void main(String[] args) {
         Palindrome p = new Palindrome();
         String val = "A man, a plan, a canal: Panama";
-        val = "race a car";
+        // val = "race a car";
         System.out.println(p.isPalindrome(val));
     }
 
@@ -16,6 +16,7 @@ public class Palindrome {
         s = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
         if (s.equals(""))
             return true;
+        System.out.println("Currently string after replace: " + s);
         char[] rev = s.toCharArray();
         int i = 0, j = rev.length - 1;
         while (i <= j) {

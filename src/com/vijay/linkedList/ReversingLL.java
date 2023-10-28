@@ -42,7 +42,6 @@ public class ReversingLL {
         Node current = reverseNode;
         Node next = null;
         Node prev = null;
-
         while (current != null) {
             next = current.next;
             current.next = prev;

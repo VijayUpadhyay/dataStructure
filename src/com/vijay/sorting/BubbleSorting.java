@@ -3,7 +3,7 @@ package com.vijay.sorting;
 public class BubbleSorting {
     public static void main(String[] args) {
         BubbleSorting OBJ = new BubbleSorting();
-        int[] arr = {22, 3, 24, 56, 12, 45};
+        int[] arr = {1, 2, 3, 4, 243, 1, 3};//{22, 3, 24, 56, 12, 45, -1};
         OBJ.bubbleSort(arr);
         printArray(arr);
     }

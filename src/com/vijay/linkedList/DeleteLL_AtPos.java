@@ -10,10 +10,12 @@ public class DeleteLL_AtPos {
         objDeleteAtPos.insert("23");
         objDeleteAtPos.insert("1");
         objDeleteAtPos.insert("27");
+        objDeleteAtPos.printLL();
         objDeleteAtPos.deleteAtPos(objDeleteAtPos.head, 3);
         objDeleteAtPos.printLL();
     }
 
+    // at beginning
     public void insert(String data) {
         Node newNode = new Node(data);
         newNode.next = head;
@@ -35,8 +37,8 @@ public class DeleteLL_AtPos {
         if (updateNode == null || updateNode.next == null)
             return;
 
-        Node unlinkNode = updateNode.next.next;
-        updateNode.next = unlinkNode;
+        // Node unlinkNode = updateNode.next.next;
+        updateNode.next = updateNode.next.next;
     }
 
     public void printLL() {

@@ -19,8 +19,7 @@ public class BinaryTreeHeight {
         q.add(root);
         q.add(null);
         while (!q.isEmpty()) {
-            Node temp = q.peek();
-            q.remove();
+            Node temp = q.poll();
             // When null encountered, increment the value
             if (temp == null) {
                 depth++;
@@ -33,9 +32,7 @@ public class BinaryTreeHeight {
                 if (temp.right != null) {
                     q.add(temp.right);
                 }
-            }
-            // If queue still have elements left, push null again to the queue.
-            else if (!q.isEmpty()) {
+            } else if (!q.isEmpty()) { // If queue still have elements left, push null again to the queue.
                 q.add(null);
             }
         }
@@ -47,7 +44,6 @@ public class BinaryTreeHeight {
         Node root = newNode(1);
         root.left = newNode(2);
         root.right = newNode(3);
-
         root.left.left = newNode(4);
         root.left.right = newNode(5);
 
