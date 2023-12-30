@@ -1,4 +1,4 @@
-package com.vijay.test;
+package com.vijay.interview;
 
 public class LongestPrefix {
     public static void main(String[] args) {
